@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text.Json;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Anime;

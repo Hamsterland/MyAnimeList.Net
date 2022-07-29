@@ -1,4 +1,5 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.Titles;
+﻿using System.Collections.Generic;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Titles;
 using Remora.Rest.Core;
 
 namespace MyAnimeList.Net.API.Objects.Titles;

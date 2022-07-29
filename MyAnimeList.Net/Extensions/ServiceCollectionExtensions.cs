@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System;
+using Microsoft.Extensions.DependencyInjection;
 using MyAnimeList.Net.Rest.Extensions;
 using Remora.Rest.Core;
 

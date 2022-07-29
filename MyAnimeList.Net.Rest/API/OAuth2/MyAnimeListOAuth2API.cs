@@ -1,4 +1,8 @@
-﻿using System.Text.Json;
+﻿using System.Collections.Generic;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web;
 using MyAnimeList.Net.API.Abstractions.API.Objects.OAuth2;
 using MyAnimeList.Net.API.Abstractions.API.Rest;

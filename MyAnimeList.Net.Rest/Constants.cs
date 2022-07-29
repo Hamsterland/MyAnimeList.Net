@@ -1,4 +1,6 @@
-﻿namespace MyAnimeList.Net.Rest;
+﻿using System;
+
+namespace MyAnimeList.Net.Rest;
 
 /// <summary>
 /// Holds various constants.

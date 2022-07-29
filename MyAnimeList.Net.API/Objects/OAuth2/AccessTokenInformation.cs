@@ -1,4 +1,5 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.OAuth2;
+﻿using System;
+using MyAnimeList.Net.API.Abstractions.API.Objects.OAuth2;
 
 namespace MyAnimeList.Net.API.Objects.OAuth2;
 

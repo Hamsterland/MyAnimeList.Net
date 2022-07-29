@@ -1,4 +1,5 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.User;
+﻿using System;
+using MyAnimeList.Net.API.Abstractions.API.Objects.User;
 using Remora.Rest.Core;
 
 namespace MyAnimeList.Net.API.Objects.User;

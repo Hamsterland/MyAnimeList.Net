@@ -1,4 +1,6 @@
-﻿namespace MyAnimeList.Net.API.Abstractions.API.Objects.Pagination;
+﻿using System.Collections.Generic;
+
+namespace MyAnimeList.Net.API.Abstractions.API.Objects.Pagination;
 
 /// <summary>
 /// Represents a pagination object.

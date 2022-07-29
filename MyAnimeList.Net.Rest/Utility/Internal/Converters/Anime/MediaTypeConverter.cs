@@ -1,4 +1,5 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
+﻿using System;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
 
 namespace MyAnimeList.Net.Rest.Utility.Internal.Converters.Anime;
 

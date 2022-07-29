@@ -1,4 +1,7 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.User;
+﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
+using MyAnimeList.Net.API.Abstractions.API.Objects.User;
 using MyAnimeList.Net.API.Abstractions.Requests;
 using Remora.Results;
 

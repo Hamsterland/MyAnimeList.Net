@@ -1,4 +1,6 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.Favourites;
+﻿using System;
+using System.Collections.Generic;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Favourites;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Genres;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Images;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Movies;

@@ -1,5 +1,8 @@
-﻿using System.Collections.Specialized;
+﻿using System;
+using System.Collections.Specialized;
 using System.Text.Json;
+using System.Threading;
+using System.Threading.Tasks;
 using MyAnimeList.Net.API.Abstractions.API.Objects.User;
 using MyAnimeList.Net.API.Abstractions.API.Rest;
 using MyAnimeList.Net.API.Abstractions.Requests;

@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 using Remora.Rest.Json.Policies;
 
 namespace MyAnimeList.Net.Rest.Utility.Internal.Converters;

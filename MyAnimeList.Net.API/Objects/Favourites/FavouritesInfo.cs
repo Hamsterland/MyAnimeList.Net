@@ -1,4 +1,5 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.Favourites;
+﻿using System;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Favourites;
 
 namespace MyAnimeList.Net.API.Objects.Favourites;
 

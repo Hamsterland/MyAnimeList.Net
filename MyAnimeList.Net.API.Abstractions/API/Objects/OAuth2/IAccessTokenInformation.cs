@@ -1,4 +1,6 @@
-﻿namespace MyAnimeList.Net.API.Abstractions.API.Objects.OAuth2;
+﻿using System;
+
+namespace MyAnimeList.Net.API.Abstractions.API.Objects.OAuth2;
 
 /// <summary>
 /// Represents an access token response information.

@@ -1,4 +1,6 @@
-﻿namespace MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
+﻿using System;
+
+namespace MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
 
 /// <summary>
 /// Represents a broadcast date.

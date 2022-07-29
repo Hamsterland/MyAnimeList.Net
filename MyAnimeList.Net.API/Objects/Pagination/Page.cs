@@ -1,4 +1,5 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.Pagination;
+﻿using System.Collections.Generic;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Pagination;
 
 namespace MyAnimeList.Net.API.Objects.Pagination;
 

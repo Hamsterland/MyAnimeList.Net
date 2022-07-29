@@ -1,4 +1,6 @@
-﻿namespace MyAnimeList.Net.API.Abstractions.API.Objects.Favourites;
+﻿using System;
+
+namespace MyAnimeList.Net.API.Abstractions.API.Objects.Favourites;
     
 /// <summary>
 /// Represents a favourites entry information.

@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Collections.Generic;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Rating;
 using Remora.Rest.Json;

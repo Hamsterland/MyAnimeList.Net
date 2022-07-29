@@ -1,4 +1,6 @@
-﻿using MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
+﻿using System;
+using System.Collections.Generic;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Movies;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Titles;
 using Remora.Rest.Core;

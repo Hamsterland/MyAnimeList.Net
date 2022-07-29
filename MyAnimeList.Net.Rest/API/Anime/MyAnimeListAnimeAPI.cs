@@ -1,4 +1,7 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
+using System.Threading;
+using System.Threading.Tasks;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Pagination;
 using MyAnimeList.Net.API.Abstractions.API.Rest;

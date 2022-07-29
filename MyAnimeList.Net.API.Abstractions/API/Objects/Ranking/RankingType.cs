@@ -1,4 +1,6 @@
-﻿namespace MyAnimeList.Net.API.Abstractions.API.Objects.Ranking;
+﻿using System;
+
+namespace MyAnimeList.Net.API.Abstractions.API.Objects.Ranking;
 
 /// <summary>
 /// Represents ranking orders.
