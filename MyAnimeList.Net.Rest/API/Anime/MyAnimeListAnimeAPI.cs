@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Errors;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Pagination;
 using MyAnimeList.Net.API.Abstractions.API.Rest;
 using MyAnimeList.Net.API.Abstractions.Requests;
@@ -21,7 +22,7 @@ public class MyAnimeListAnimeAPI : AbstractMyAnimeListAPI, IMyAnimeListAnimeAPI
     /// </summary>
     /// <param name="restHttpClient">The REST HTTP client.</param>
     /// <param name="jsonOptions">The JSON options.</param>
-    public MyAnimeListAnimeAPI(IRestHttpClient restHttpClient, JsonSerializerOptions jsonOptions) : base(restHttpClient, jsonOptions)
+    public MyAnimeListAnimeAPI(RestHttpClient<IMyAnimeListRestError> restHttpClient, JsonSerializerOptions jsonOptions) : base(restHttpClient, jsonOptions)
     {
     }
 

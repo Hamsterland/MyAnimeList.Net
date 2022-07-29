@@ -4,6 +4,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Errors;
 using MyAnimeList.Net.API.Abstractions.API.Objects.OAuth2;
 using MyAnimeList.Net.API.Abstractions.API.Rest;
 using Remora.Rest;
@@ -18,7 +19,7 @@ public class MyAnimeListOAuth2API : AbstractMyAnimeListAPI, IMyAnimeListOAuth2AP
     /// <summary>
     /// Initializes a new instance of the <see cref="MyAnimeListOAuth2API"/> class.
     /// </summary>
-    public MyAnimeListOAuth2API(IRestHttpClient restHttpClient, JsonSerializerOptions jsonOptions) : base(restHttpClient, jsonOptions)
+    public MyAnimeListOAuth2API(RestHttpClient<IMyAnimeListRestError> restHttpClient, JsonSerializerOptions jsonOptions) : base(restHttpClient, jsonOptions)
     {
     }
 

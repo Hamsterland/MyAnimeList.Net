@@ -3,6 +3,7 @@ using System.Collections.Specialized;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Errors;
 using MyAnimeList.Net.API.Abstractions.API.Objects.User;
 using MyAnimeList.Net.API.Abstractions.API.Rest;
 using MyAnimeList.Net.API.Abstractions.Requests;
@@ -17,7 +18,7 @@ public class MyAnimeListUserAPI : AbstractMyAnimeListAPI, IMyAnimeListUserAPI
     /// <summary>
     /// Initializes a new instance of the <see cref="MyAnimeListUserAPI"/> class.
     /// </summary>
-    public MyAnimeListUserAPI(IRestHttpClient restHttpClient, JsonSerializerOptions jsonOptions) : base(restHttpClient, jsonOptions)
+    public MyAnimeListUserAPI(RestHttpClient<IMyAnimeListRestError> restHttpClient, JsonSerializerOptions jsonOptions) : base(restHttpClient, jsonOptions)
     {
     }
 

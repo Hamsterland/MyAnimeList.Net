@@ -3,7 +3,9 @@ using System.Reflection;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text.Json;
 using MyAnimeList.Net.API.Abstractions.API.Objects.Anime;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Errors;
 using MyAnimeList.Net.API.Abstractions.Requests;
+using MyAnimeList.Net.API.Objects.Errors;
 using MyAnimeList.Net.Rest.Utility.Properties;
 using MyAnimeList.Net.Rest.Utility.Requests;
 using Remora.Rest;
@@ -15,12 +17,12 @@ namespace MyAnimeList.Net.Rest.API;
 /// <summary>
 /// Acts as a base for all REST API instances.
 /// </summary>
-public abstract class AbstractMyAnimeListAPI : IRestCustomizable
+public abstract class AbstractMyAnimeListAPI 
 {
     /// <summary>
     /// Gets the REST HTTP client available to the API instance.
     /// </summary>
-    protected IRestHttpClient RestHttpClient { get; }
+    protected RestHttpClient<IMyAnimeListRestError> RestHttpClient { get; }
     
     /// <summary>
     /// Gets the JSON options available to the API instance.
@@ -32,24 +34,12 @@ public abstract class AbstractMyAnimeListAPI : IRestCustomizable
     /// </summary>
     /// <param name="restHttpClient">The REST HTTP client.</param>
     /// <param name="jsonOptions">The JSON options.</param>
-    protected AbstractMyAnimeListAPI(IRestHttpClient restHttpClient, JsonSerializerOptions jsonOptions)
+    protected AbstractMyAnimeListAPI(RestHttpClient<IMyAnimeListRestError> restHttpClient, JsonSerializerOptions jsonOptions)
     {
         RestHttpClient = restHttpClient;
         JsonOptions = jsonOptions;
     }
     
-    /// <inheritdoc cref="RestHttpClient{TError}.WithCustomization"/>
-    public RestRequestCustomization WithCustomization(Action<RestRequestBuilder> requestCustomizer)
-    {
-        return this.RestHttpClient.WithCustomization(requestCustomizer);
-    }
-
-    /// <inheritdoc cref="RestHttpClient{TError}.WithCustomization"/>
-    void IRestCustomizable.RemoveCustomization(RestRequestCustomization customization)
-    {
-        this.RestHttpClient.RemoveCustomization(customization);
-    }
-
     /// <summary>
     /// Converts the requested properties into a <see cref="PropertyNameStore"/>.
     /// </summary>

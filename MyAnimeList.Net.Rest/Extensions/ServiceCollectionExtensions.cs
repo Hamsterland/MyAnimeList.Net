@@ -5,9 +5,11 @@ using System.Text.Json;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
+using MyAnimeList.Net.API.Abstractions.API.Objects.Errors;
 using MyAnimeList.Net.API.Abstractions.API.Rest;
 using MyAnimeList.Net.API.Extensions;
 using MyAnimeList.Net.API.Objects.Errors;
+using MyAnimeList.Net.Rest.API;
 using MyAnimeList.Net.Rest.API.Anime;
 using MyAnimeList.Net.Rest.API.OAuth2;
 using MyAnimeList.Net.Rest.API.User;
@@ -38,33 +40,11 @@ public static class ServiceCollectionExtensions
         Action<IHttpClientBuilder>? buildClient = null
     )
     {
-        services.ConfigureMyAnimeListDataObjectConverters();
-        services.AddSingleton<ITokenStore>(_ => new TokenStore(token, clientID));
-        
-        services.TryAddTransient<IMyAnimeListAnimeAPI>(s => new MyAnimeListAnimeAPI
-        (
-            s.GetRequiredService<IRestHttpClient>(),
-            s.GetRequiredService<IOptionsMonitor<JsonSerializerOptions>>().Get("MyAnimeList")
-        ));
-        
-        services.TryAddTransient<IMyAnimeListOAuth2API>(s => new MyAnimeListOAuth2API
-        (
-            s.GetRequiredService<IRestHttpClient>(),
-            s.GetRequiredService<IOptionsMonitor<JsonSerializerOptions>>().Get("MyAnimeList")
-        ));
-        
-        services.TryAddTransient<IMyAnimeListUserAPI>(s => new MyAnimeListUserAPI
-        (
-            s.GetRequiredService<IRestHttpClient>(),
-            s.GetRequiredService<IOptionsMonitor<JsonSerializerOptions>>().Get("MyAnimeList")
-        ));
-
         var clientBuilder = services
-            .AddRestHttpClient<MyAnimeListRestError>("MyAnimeList")
+            .AddRestHttpClient<IMyAnimeListRestError>("MyAnimeList")
             // ReSharper disable once VariableHidesOuterVariable
             .ConfigureHttpClient((services, client) =>
             {
-
                 var assemblyName = Assembly.GetExecutingAssembly().GetName();
                 var name = assemblyName.Name ?? "MyAnimeLMyAnimeList.Net.Rest";
                 var version = assemblyName.Version ?? new Version(1, 0, 0);
@@ -88,6 +68,54 @@ public static class ServiceCollectionExtensions
         // Run extra user-defined client building operations.
         buildClient?.Invoke(clientBuilder);
         
+        services.ConfigureMyAnimeListDataObjectConverters();
+        services.AddSingleton<ITokenStore>(_ => new TokenStore(token, clientID));
+        
+        services.TryAddTransient<IMyAnimeListAnimeAPI>(s => new MyAnimeListAnimeAPI
+        (
+            s.GetRequiredService<RestHttpClient<IMyAnimeListRestError>>(),
+            s.GetRequiredService<IOptionsMonitor<JsonSerializerOptions>>().Get("MyAnimeList")
+        ));
+        
+        services.TryAddTransient<IMyAnimeListOAuth2API>(s => new MyAnimeListOAuth2API
+        (
+            s.GetRequiredService<RestHttpClient<IMyAnimeListRestError>>(),
+            s.GetRequiredService<IOptionsMonitor<JsonSerializerOptions>>().Get("MyAnimeList")
+        ));
+        
+        services.TryAddTransient<IMyAnimeListUserAPI>(s => new MyAnimeListUserAPI
+        (
+            s.GetRequiredService<RestHttpClient<IMyAnimeListRestError>>(),
+            s.GetRequiredService<IOptionsMonitor<JsonSerializerOptions>>().Get("MyAnimeList")
+        ));
+
         return services;
+    }
+    
+    /// <summary>
+    /// Adds a REST-specialized HTTP client, allowing subsequent optional configuration of the backend client.
+    /// </summary>
+    /// <param name="services">The services.</param>
+    /// <param name="optionsName">The name of the JSON options to retrieve, if any.</param>
+    /// <typeparam name="TError">The error that the created client will handle.</typeparam>
+    /// <returns>The client builder for the REST client.</returns>
+    private static IHttpClientBuilder AddRestHttpClient<TError>
+    (
+        this IServiceCollection services,
+        string? optionsName = null
+    )
+    {
+        var httpClientBuilder = services.AddHttpClient<RestHttpClient<TError>>("MyAnimeList");
+
+        services.Replace(ServiceDescriptor.Transient(s =>
+        {
+            var client = s.GetRequiredService<IHttpClientFactory>().CreateClient(httpClientBuilder.Name);
+            var options = s.GetRequiredService<IOptionsMonitor<JsonSerializerOptions>>().Get(optionsName);
+
+            return new RestHttpClient<TError>(client, options);
+        }));
+
+        services.TryAddTransient(s => s.GetRequiredService<RestHttpClient<TError>>());
+        return httpClientBuilder;
     }
 }
