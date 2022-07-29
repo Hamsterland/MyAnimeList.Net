@@ -89,7 +89,7 @@ public static class ServiceCollectionExtensions
 
     private static JsonSerializerOptions AddErrorObjectConverters(this JsonSerializerOptions options)
     {
-        options.AddDataObjectConverter<IRestError, RestError>();
+        options.AddDataObjectConverter<IMyAnimeListRestError, MyAnimeListRestError>();
 
         return options;
     }

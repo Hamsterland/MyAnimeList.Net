@@ -3,7 +3,7 @@
 /// <summary>
 /// Represents an error reported by the REST API.
 /// </summary>
-public interface IRestError
+public interface IMyAnimeListRestError
 {
     /// <summary>
     /// Gets the error message.

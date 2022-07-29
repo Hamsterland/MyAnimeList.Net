@@ -60,7 +60,7 @@ public static class ServiceCollectionExtensions
         ));
 
         var clientBuilder = services
-            .AddRestHttpClient<RestError>("MyAnimeList")
+            .AddRestHttpClient<MyAnimeListRestError>("MyAnimeList")
             // ReSharper disable once VariableHidesOuterVariable
             .ConfigureHttpClient((services, client) =>
             {
