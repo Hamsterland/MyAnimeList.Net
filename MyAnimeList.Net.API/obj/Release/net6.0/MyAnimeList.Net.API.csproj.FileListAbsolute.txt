@@ -1,0 +1,15 @@
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\bin\Release\net6.0\MyAnimeList.Net.API.deps.json
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\bin\Release\net6.0\MyAnimeList.Net.API.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\bin\Release\net6.0\MyAnimeList.Net.API.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\bin\Release\net6.0\MyAnimeList.Net.API.Abstractions.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\bin\Release\net6.0\MyAnimeList.Net.API.Abstractions.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\MyAnimeList.Net.API.csproj.AssemblyReference.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\MyAnimeList.Net.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\MyAnimeList.Net.API.AssemblyInfoInputs.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\MyAnimeList.Net.API.AssemblyInfo.cs
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\MyAnimeList.Net.API.csproj.CoreCompileInputs.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\MyAnimeList.Net.API.csproj.CopyComplete
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\MyAnimeList.Net.API.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\refint\MyAnimeList.Net.API.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\MyAnimeList.Net.API.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.API\obj\Release\net6.0\ref\MyAnimeList.Net.API.dll

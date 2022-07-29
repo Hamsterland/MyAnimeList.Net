@@ -1,11 +1,11 @@
-/MyAnimeList.Rest/bin/
-/MyAnimeList.Rest/obj/
-/MyAnimeList.API.Abstractions/bin/
-/MyAnimeList.API.Abstractions/obj/
-/MyAnimeList.API/obj/
-/MyAnimeList.API/bin/
-/MyAnimeList.AnimeExamples/obj/
-/MyAnimeList.AnimeExamples/bin/
+/MyAnimeList.Net.Rest/bin/
+/MyAnimeList.Net.Rest/obj/
+/MyAnimeList.Net.API.Abstractions/bin/
+/MyAnimeList.Net.API.Abstractions/obj/
+/MyAnimeList.Net.API/obj/
+/MyAnimeList.Net.API/bin/
+/MyAnimeList.Net.AnimeExamples/obj/
+/MyAnimeList.Net.AnimeExamples/bin/
 .idea
 Backup
 

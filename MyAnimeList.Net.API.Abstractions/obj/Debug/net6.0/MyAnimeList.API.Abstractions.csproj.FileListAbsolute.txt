@@ -1,0 +1,12 @@
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\bin\Debug\net6.0\MyAnimeList.API.Abstractions.deps.json
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\bin\Debug\net6.0\MyAnimeList.API.Abstractions.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\bin\Debug\net6.0\MyAnimeList.API.Abstractions.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\MyAnimeList.API.Abstractions.csproj.AssemblyReference.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\MyAnimeList.API.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\MyAnimeList.API.Abstractions.AssemblyInfoInputs.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\MyAnimeList.API.Abstractions.AssemblyInfo.cs
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\MyAnimeList.API.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\MyAnimeList.API.Abstractions.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\refint\MyAnimeList.API.Abstractions.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\MyAnimeList.API.Abstractions.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.API.Abstractions\obj\Debug\net6.0\ref\MyAnimeList.API.Abstractions.dll

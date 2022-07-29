@@ -1,0 +1,17 @@
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\bin\Release\net6.0\MyAnimeList.Net.Rest.deps.json
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\bin\Release\net6.0\MyAnimeList.Net.Rest.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\bin\Release\net6.0\MyAnimeList.Net.Rest.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\bin\Release\net6.0\MyAnimeList.Net.API.Abstractions.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\bin\Release\net6.0\MyAnimeList.Net.API.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\bin\Release\net6.0\MyAnimeList.Net.API.Abstractions.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\bin\Release\net6.0\MyAnimeList.Net.API.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\MyAnimeList.Net.Rest.csproj.AssemblyReference.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\MyAnimeList.Net.Rest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\MyAnimeList.Net.Rest.AssemblyInfoInputs.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\MyAnimeList.Net.Rest.AssemblyInfo.cs
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\MyAnimeList.Net.Rest.csproj.CoreCompileInputs.cache
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\MyAnimeList.Net.Rest.csproj.CopyComplete
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\MyAnimeList.Net.Rest.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\refint\MyAnimeList.Net.Rest.dll
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\MyAnimeList.Net.Rest.pdb
+C:\Users\mdabr\RiderProjects\REST\MyAnimeList.Net\MyAnimeList.Net.Rest\obj\Release\net6.0\ref\MyAnimeList.Net.Rest.dll
