@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using MyAnimeList.API.Abstractions.API.Rest;
-using MyAnimeList.Rest.Extensions;
-using Remora.Rest.Core;
+using MyAnimeList.Net.API.Abstractions.API.Rest;
+using MyAnimeList.Net.Rest.Extensions;
 
 var credentials = File.ReadAllLines("credentials.txt");
 
