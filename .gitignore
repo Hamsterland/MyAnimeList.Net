@@ -1,0 +1,14 @@
+/MyAnimeList.Rest/bin/
+/MyAnimeList.Rest/obj/
+/MyAnimeList.API.Abstractions/bin/
+/MyAnimeList.API.Abstractions/obj/
+/MyAnimeList.API/obj/
+/MyAnimeList.API/bin/
+/MyAnimeList.AnimeExamples/obj/
+/MyAnimeList.AnimeExamples/bin/
+.idea
+Backup
+
+MyAnimeList.AnimeExamples/obj/
+MyAnimeList.AnimeExamples/bin/
+MyAnimeList.AnimeExamples/credentials.txt
